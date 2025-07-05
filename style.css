@@ -1,0 +1,185 @@
+/* Base reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* Light & Dark Modes */
+body.dark {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+/* Navbar */
+.navbar {
+  background-color: rebeccapurple;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .logo {
+  color: white;
+  font-size: 1.5em;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a,
+.nav-links button {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background-color: #ece0ff;
+}
+
+.hero h2 {
+  font-size: 2.5em;
+}
+
+.hero p {
+  margin-top: 10px;
+  font-size: 1.2em;
+  color: #555;
+}
+
+/* Sections */
+.content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+section {
+  margin-bottom: 60px;
+}
+
+h2 {
+  color: rebeccapurple;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.skill-list {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.skill-list span {
+  background: #ddd;
+  padding: 10px 15px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+/* Project Cards */
+.projects-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Buttons */
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.3s;
+}
+
+.primary {
+  background-color: rebeccapurple;
+  color: white;
+}
+
+.primary:hover {
+  background-color: #5e0cac;
+}
+
+.secondary {
+  background-color: #ddd;
+}
+
+.secondary:hover {
+  background-color: #bbb;
+}
+
+/* Contact */
+#contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input,
+textarea {
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* Scroll to Top */
+#scrollTop {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: rebeccapurple;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 12px 16px;
+  cursor: pointer;
+  font-size: 1.2em;
+  display: none;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #eee;
+}
